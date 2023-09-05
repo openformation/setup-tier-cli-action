@@ -1,4 +1,4 @@
-name: "Installation Process Testing"
+name: "Compile Release Artifact"
 
 on:
   push:
