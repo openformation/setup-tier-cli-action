@@ -33,6 +33,6 @@ jobs:
       - name: "Verify Tier CLI Version"
         run: tier version
       - name: "Push build artifact back to the remote repository"
-      - uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "chore(build): adds recent build artifact"
