@@ -10,7 +10,7 @@ Setup the `tier` CLI and pass the respective version:
 
 ```yaml
 steps:
-  - uses: openformation/setup-tier-cli@v1
+  - uses: openformation/setup-tier-cli-action@v1
     with:
       version: "0.12.0"
 ```
@@ -19,7 +19,7 @@ Afterwards, you can use the `tier` CLI in subsequent steps:
 
 ```yaml
 steps:
-  - uses: openformation/setup-tier-cli@v1
+  - uses: openformation/setup-tier-cli-action@v1
     with:
       version: "0.12.0"
   - run: tier push ...
