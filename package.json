@@ -1,0 +1,45 @@
+{
+  "name": "@openformation/setup-tier-cli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A GitHub action for interacting with your tier.run pricing model using the CLI.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "tsc -p .",
+    "format": "prettier -w src/**/*.ts",
+    "lint": "eslint src/**/*.ts"
+  },
+  "lint-staged": {
+    "*.ts": "bun run format && bun run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openformation/setup-tier-cli.git"
+  },
+  "keywords": [
+    "actions",
+    "tier"
+  ],
+  "author": {
+    "name": "Open Formation GmbH",
+    "email": "info@openformation.io",
+    "url": "https://openformation.io"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/tool-cache": "^2.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "lint-staged": "^14.0.1",
+    "husky": "^8.0.3",
+    "bun-types": "^0.8.1",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}

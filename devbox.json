@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "act@latest",
+    "bun@latest"
+  ]
+}

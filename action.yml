@@ -1,0 +1,12 @@
+name: "Tier CLI Action"
+description: "A GitHub action for interacting with your tier.run pricing model using the CLI."
+inputs:
+  version:
+    description: "Version of the Tier CLI to install"
+    required: true
+outputs:
+  version:
+    description: "Version of the installed Tier CLI"
+runs:
+  using: node16
+  main: dist/index.js
